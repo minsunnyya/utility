@@ -3,9 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Utility Collection Page</title>
+    <meta
+      name="description"
+      content="A collection of useful utilities for various tasks. Click to navigate to your desired utility."
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    test
+    <header>
+      <div class="wave"></div>
+      <h1>Utility Collection</h1>
+    </header>
+    <main>
+      <section aria-label="Utility Collection" class="utility-container">
+        <div
+          class="utility"
+          tabindex="0"
+          role="button"
+          onclick="navigateTo('password/password.html')"
+          onkeypress="handleKeyPress(event, 'password/password.html')"
+        >
+          Password Generator
+        </div>
+        <div
+          class="utility"
+          tabindex="0"
+          role="button"
+          onclick="navigateTo('spell/spell.html')"
+          onkeypress="handleKeyPress(event, 'spell/spell.html')"
+        >
+          English Spell Checke
+        </div>
+        <div
+          class="utility"
+          tabindex="0"
+          role="button"
+          onclick="navigateTo('name/name.html')"
+          onkeypress="handleKeyPress(event, 'name/name.html')"
+        >
+          English Name Generator
+        </div>
+        <div
+          class="utility"
+          tabindex="0"
+          role="button"
+          onclick="navigateTo('utility4.html')"
+          onkeypress="handleKeyPress(event, 'utility4.html')"
+        >
+          Utility 4
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
