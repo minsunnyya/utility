@@ -1,0 +1,73 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.password-generator {
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+#password {
+  width: -webkit-fill-available;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+#password:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+#generate,
+#back {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 5px;
+}
+#generate:hover,
+#back:hover {
+  background-color: #45a049;
+}
+#generate:active,
+#back:active {
+  transform: scale(0.95);
+}
+@media (max-width: 600px) {
+  .password-generator {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  #generate,
+  #back {
+    font-size: 14px;
+  }
+}
